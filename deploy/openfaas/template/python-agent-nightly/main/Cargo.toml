@@ -1,0 +1,9 @@
+[package]
+name = "main"
+version = "0.1.0"
+authors = ["Lei Zhengyu"]
+edition = "2021"
+
+[dependencies]
+chitu = { path = "../chitu/chitu" }
+actix-web = "4"

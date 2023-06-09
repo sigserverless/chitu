@@ -1,0 +1,35 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: localhost:31112
+functions:
+  dp-case-1-rs:
+    lang: python-agent-nightly
+    handler: ./dp-case-1-rs
+    image: localhost:5000/function/dp-case-1-rs:latest
+    environment: 
+      read_timeout: 10m
+      write_timeout: 10m 
+      exec_timeout: 10m 
+    limits:
+      memory: 8192Mi
+      cpu: 4000m
+    requests:
+      memory: 8192Mi
+      cpu: 4000m
+  
+  dp-case-2-rs:
+    lang: python-agent-nightly
+    handler: ./dp-case-2-rs
+    image: localhost:5000/function/dp-case-2-rs:latest
+    environment: 
+      read_timeout: 10m
+      write_timeout: 10m 
+      exec_timeout: 10m 
+    limits:
+      memory: 8192Mi
+      cpu: 4000m
+    requests:
+      memory: 8192Mi
+      cpu: 4000m
+

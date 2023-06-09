@@ -1,0 +1,4 @@
+language: rust-agent
+fprocess: ./main 
+welcome_message: |
+  State agent for rust 

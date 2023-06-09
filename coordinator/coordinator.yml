@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://localhost:31112
+functions:
+  coordinator:
+    lang: dockerfile
+    handler: ./coordinator
+    image: localhost:5000/function/coordinator:latest
+

@@ -1,0 +1,15 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: localhost:31112
+functions:
+  testbench-rs:
+    lang: rust-agent
+    handler: ./testbench-rs
+    image: localhost:5000/function/testbench-rs:latest
+    limits:
+      memory: 16G
+      cpu: 4000m
+    requests:
+      memory: 16G
+      cpu: 4000m

@@ -1,0 +1,30 @@
+curl -i localhost:31112/function/testbench-rs -d '
+{
+    "mode": "local",
+    "records": 1000000,
+    "chunkSize": 1
+}'
+
+# 65MB
+curl -i localhost:31112/function/testbench-rs -d '
+{
+    "mode": "chitu",
+    "records": 1000000,
+    "chunkSize": 1000000
+}'
+
+# 650MB
+curl -i localhost:31112/function/testbench-rs -d '
+{
+    "mode": "chitu",
+    "records": 10000000,
+    "chunkSize": 20000000
+}'
+
+# redis 650MB
+curl -i localhost:31112/function/testbench-rs -d '
+{
+    "mode": "redis",
+    "records": 10000000,
+    "chunkSize": 1
+}'

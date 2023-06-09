@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: localhost:31112
+functions:
+  pubsub-rs:
+    lang: rust-agent
+    handler: ./pubsub-rs
+    image: localhost:5000/function/pubsub-rs:latest

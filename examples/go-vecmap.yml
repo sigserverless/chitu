@@ -1,0 +1,21 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: localhost:31112
+functions:
+  example-1:
+    lang: golang-agent
+    handler: ./example-1
+    image: localhost:5000/function/example-1:latest
+    environment: 
+      read_timeout: 10m
+      write_timeout: 10m 
+      exec_timeout: 10m 
+  example-2:
+    lang: golang-agent
+    handler: ./example-2
+    image: localhost:5000/function/example-2:latest
+    environment: 
+      read_timeout: 10m
+      write_timeout: 10m 
+      exec_timeout: 10m 

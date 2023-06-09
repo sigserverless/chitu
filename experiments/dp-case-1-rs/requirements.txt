@@ -1,0 +1,8 @@
+numpy==1.21.2
+torch==1.11.0
+requests==2.30.0
+charset-normalizer==3.1.0
+idna==3.4
+urllib3==2.0.2
+certifi==2023.5.7
+redis==4.5.0

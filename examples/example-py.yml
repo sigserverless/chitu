@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: localhost:31112
+functions:
+  example-py:
+    lang: python-agent
+    handler: ./example-py
+    image: localhost:5000/function/example-py:latest
+

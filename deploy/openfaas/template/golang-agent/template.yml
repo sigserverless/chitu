@@ -1,0 +1,4 @@
+language: golang-agent
+fprocess: ./handler
+welcome_message: |
+  State agent of Chitu.

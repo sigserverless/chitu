@@ -1,0 +1,13 @@
+syntax = "proto3";
+package pany;
+
+option go_package = "/pany";
+
+message PAnyReplace {
+    string id = 1;
+    bytes elem = 2; 
+}
+
+message PAnyVal {
+    bytes val = 1;
+}

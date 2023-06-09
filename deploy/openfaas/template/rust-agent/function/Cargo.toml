@@ -1,0 +1,10 @@
+[package]
+name = "handler"
+version = "0.1.0"
+authors = ["Lei Zhengyu"]
+edition = "2021"
+
+[dependencies]
+chitu = { path = "../chitu/chitu" }
+chitu-macros = { path = "../chitu/chitu-macros" }
+tokio = { version = "1", features = ["full"] }

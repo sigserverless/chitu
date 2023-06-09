@@ -1,0 +1,6 @@
+language: python-agent-nightly
+fprocess: ./main 
+welcome_message: |
+  State agent for python 
+  This template is nightly. When stable, it should be merged into the 
+  python-agent template. 
